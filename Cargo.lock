@@ -156,9 +156,9 @@ checksum = "98161a4e3e2184da77bb14f02184cdd111e83bbbcc9979dfee3c44b9a85f5602"
 
 [[package]]
 name = "arbitrary"
-version = "1.1.6"
+version = "1.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f44124848854b941eafdb34f05b3bcf59472f643c7e151eba7c2b69daa469ed5"
+checksum = "d86fd10d912cab78764cc44307d9cd5f164e09abbeb87fb19fb6d95937e8da5f"
 dependencies = [
  "derive_arbitrary",
 ]
@@ -983,7 +983,7 @@ dependencies = [
  "slot_clock",
  "store",
  "task_executor",
- "time 0.3.14",
+ "time 0.3.15",
  "timer",
  "tokio",
  "types",
@@ -3349,9 +3349,9 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.133"
+version = "0.2.134"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c0f80d65747a3e43d1596c7c5492d95d5edddaabd45a7fcdb02b95f644164966"
+checksum = "329c933548736bc49fd575ee68c89e8be4d260064184389a5b77517cddd99ffb"
 
 [[package]]
 name = "libflate"
@@ -3407,7 +3407,7 @@ dependencies = [
 [[package]]
 name = "libp2p"
 version = "0.49.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "bytes",
  "futures",
@@ -3472,7 +3472,7 @@ dependencies = [
 [[package]]
 name = "libp2p-core"
 version = "0.36.1"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "asn1_der",
  "bs58",
@@ -3505,7 +3505,7 @@ dependencies = [
 [[package]]
 name = "libp2p-dns"
 version = "0.36.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "futures",
  "libp2p-core 0.36.1",
@@ -3518,7 +3518,7 @@ dependencies = [
 [[package]]
 name = "libp2p-gossipsub"
 version = "0.41.1"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "asynchronous-codec",
  "base64",
@@ -3545,7 +3545,7 @@ dependencies = [
 [[package]]
 name = "libp2p-identify"
 version = "0.39.1"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "asynchronous-codec",
  "futures",
@@ -3553,7 +3553,7 @@ dependencies = [
  "libp2p-core 0.36.1",
  "libp2p-swarm",
  "log",
- "lru 0.8.0",
+ "lru 0.8.1",
  "prost 0.11.0",
  "prost-build 0.11.1",
  "prost-codec",
@@ -3565,7 +3565,7 @@ dependencies = [
 [[package]]
 name = "libp2p-metrics"
 version = "0.10.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "libp2p-core 0.36.1",
  "libp2p-gossipsub",
@@ -3577,7 +3577,7 @@ dependencies = [
 [[package]]
 name = "libp2p-mplex"
 version = "0.36.1"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "asynchronous-codec",
  "bytes",
@@ -3594,7 +3594,7 @@ dependencies = [
 [[package]]
 name = "libp2p-noise"
 version = "0.39.1"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "bytes",
  "curve25519-dalek 3.2.0",
@@ -3615,7 +3615,7 @@ dependencies = [
 [[package]]
 name = "libp2p-plaintext"
 version = "0.36.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "asynchronous-codec",
  "bytes",
@@ -3631,7 +3631,7 @@ dependencies = [
 [[package]]
 name = "libp2p-swarm"
 version = "0.39.1"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "either",
  "fnv",
@@ -3650,7 +3650,7 @@ dependencies = [
 [[package]]
 name = "libp2p-swarm-derive"
 version = "0.30.1"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "heck 0.4.0",
  "quote",
@@ -3660,7 +3660,7 @@ dependencies = [
 [[package]]
 name = "libp2p-tcp"
 version = "0.37.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "futures",
  "futures-timer",
@@ -3675,7 +3675,7 @@ dependencies = [
 [[package]]
 name = "libp2p-websocket"
 version = "0.38.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "either",
  "futures",
@@ -3693,7 +3693,7 @@ dependencies = [
 [[package]]
 name = "libp2p-yamux"
 version = "0.40.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "futures",
  "libp2p-core 0.36.1",
@@ -3955,9 +3955,9 @@ dependencies = [
 
 [[package]]
 name = "lru"
-version = "0.8.0"
+version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "936d98d2ddd79c18641c6709e7bb09981449694e402d1a0f0f657ea8d61f4a51"
+checksum = "b6e8aaa3f231bb4bd57b84b2d5dc3ae7f350265df8aa96492e0bc394a1571909"
 dependencies = [
  "hashbrown 0.12.3",
 ]
@@ -4290,7 +4290,7 @@ dependencies = [
 [[package]]
 name = "multistream-select"
 version = "0.11.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "bytes",
  "futures",
@@ -4844,9 +4844,9 @@ checksum = "478c572c3d73181ff3c2539045f6eb99e5491218eae919370993b890cdbdd98e"
 
 [[package]]
 name = "pest"
-version = "2.3.1"
+version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cb779fcf4bb850fbbb0edc96ff6cf34fd90c4b1a112ce042653280d9a7364048"
+checksum = "dbc7bc69c062e492337d74d59b120c274fd3d261b6bf6d3207d499b4b379c41a"
 dependencies = [
  "thiserror",
  "ucd-trie",
@@ -5223,7 +5223,7 @@ dependencies = [
 [[package]]
 name = "prost-codec"
 version = "0.2.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "asynchronous-codec",
  "bytes",
@@ -5801,7 +5801,7 @@ dependencies = [
 [[package]]
 name = "rw-stream-sink"
 version = "0.3.0"
-source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b7991a7ffd7a4cdf52298ac9433ba60ada81d4b4"
+source = "git+https://github.com/sigp/rust-libp2p?branch=episub#b6301d77e16859dc014301333c27a010c36a669e"
 dependencies = [
  "futures",
  "pin-project 1.0.12",
@@ -6244,7 +6244,7 @@ dependencies = [
  "num-bigint",
  "num-traits",
  "thiserror",
- "time 0.3.14",
+ "time 0.3.15",
 ]
 
 [[package]]
@@ -6370,7 +6370,7 @@ dependencies = [
  "serde",
  "serde_json",
  "slog",
- "time 0.3.14",
+ "time 0.3.15",
 ]
 
 [[package]]
@@ -6415,7 +6415,7 @@ dependencies = [
  "slog",
  "term",
  "thread_local",
- "time 0.3.14",
+ "time 0.3.15",
 ]
 
 [[package]]
@@ -6454,9 +6454,9 @@ dependencies = [
 
 [[package]]
 name = "smallvec"
-version = "1.9.0"
+version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2fd0db749597d91ff862fd1d55ea87f7855a744a8425a64695b6fca237d1dad1"
+checksum = "a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0"
 
 [[package]]
 name = "snap"
@@ -6888,9 +6888,9 @@ dependencies = [
 
 [[package]]
 name = "time"
-version = "0.3.14"
+version = "0.3.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3c3f9a28b618c3a6b9251b6908e9c99e04b9e5c02e6581ccbb67d59c34ef7f9b"
+checksum = "d634a985c4d4238ec39cacaed2e7ae552fbd3c476b552c1deac3021b7d7eaf0c"
 dependencies = [
  "itoa 1.0.3",
  "libc",
