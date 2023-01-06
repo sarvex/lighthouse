@@ -404,6 +404,7 @@ impl<T: BeaconChainTypes> SyncManager<T> {
                     // complete a backfill sync.
                     if matches!(sync_state, SyncState::Synced) {
                         // Determine if we need to start/resume/restart a backfill sync.
+                        /*
                         match self.backfill_sync.start(&mut self.network) {
                             Ok(SyncStart::Syncing {
                                 completed,
@@ -419,6 +420,7 @@ impl<T: BeaconChainTypes> SyncManager<T> {
                                 error!(self.log, "Backfill sync failed to start"; "error" => ?e);
                             }
                         }
+                        */
                     }
 
                     // Return the sync state if backfilling is not required.
