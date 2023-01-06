@@ -2939,6 +2939,7 @@ impl<T: BeaconChainTypes> BeaconChain<T> {
             block_time_imported,
             payload_verification_status,
             current_slot,
+            block_time_applied_to_early_attester_cache,
         );
 
         Ok(block_root)
@@ -3200,6 +3201,7 @@ impl<T: BeaconChainTypes> BeaconChain<T> {
         block_time_imported: Duration,
         payload_verification_status: PayloadVerificationStatus,
         current_slot: Slot,
+        block_time_applied_to_early_attester_cache: Option<Duration>
     ) {
         // Only present some metrics for blocks from the previous epoch or later.
         //
