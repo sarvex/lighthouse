@@ -58,7 +58,7 @@ def normalize_path(path):
 
 # Determine the list of filenames which were accessed during tests.
 passed = set()
-for line in open(accessed_files_filename, 'r').readlines():
+for line in open(accessed_files_filename, 'r'):
     file = normalize_path(line.strip().strip('"'))
     passed.add(file)
 
@@ -72,11 +72,10 @@ for root, dirs, files in os.walk(tests_dir_filename):
     for name in files:
         name = normalize_path(os.path.join(root, name))
         if name not in passed:
-            excluded = False
-            for excluded_path_regex in excluded_paths:
-                if re.match(excluded_path_regex, name):
-                    excluded = True
-                    break
+            excluded = any(
+                re.match(excluded_path_regex, name)
+                for excluded_path_regex in excluded_paths
+            )
             if excluded:
                 excluded_files += 1
             else:
@@ -86,6 +85,8 @@ for root, dirs, files in os.walk(tests_dir_filename):
             accessed_files += 1
 
 # Exit with an error if there were any files missed.
-assert len(missed) == 0, "{} missed files".format(len(missed))
+assert not missed, f"{len(missed)} missed files"
 
-print("Accessed {} files ({} intentionally excluded)".format(accessed_files, excluded_files))
+print(
+    f"Accessed {accessed_files} files ({excluded_files} intentionally excluded)"
+)
